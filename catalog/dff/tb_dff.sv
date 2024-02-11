@@ -1,10 +1,10 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// EXAMPLE TESTBENCH module
+// D Flip Flop TESTBENCH module
 //
-// An example testbench module for your Computer Architecture Elements Catalog
+// A DFF testbench module for your Computer Architecture Elements Catalog
 //
-// module: tb_example_module
+// module: tb_dff
 // hdl: Verilog
 //
 // author: Your Name <your.name@cooper.edu>
@@ -13,9 +13,9 @@
 
 `timescale 1ns/100ps
 
-`include "./example_module.sv"
+`include "./dff.sv"
 
-module tb_example_module;
+module tb_dff;
 
    reg [3:0] a, b;   //inputs are reg for test bench
    wire [3:0] c;     //outputs are wire for test bench
@@ -50,8 +50,7 @@ module tb_example_module;
    //
    // ---------------- INSTANTIATE UNIT UNDER TEST (UUT) ----------------
    //
-   example_module uut(.A(a), .B(b), .C(c));
+   dff uut(.A(a), .B(b), .C(c));
 
 endmodule
 
-// `endif // tb_example_module

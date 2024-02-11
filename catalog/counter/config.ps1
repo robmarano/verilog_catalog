@@ -5,11 +5,11 @@
  # Note: icarus verilog and gtkwave must be installed
  #>
 
-$COMPONENT = "example_module"
+$COMPONENT = "counter"
 #
 $SRC = "$COMPONENT.sv"
-$TESTBENCH = "tb_clock_dividers.sv"
-$TBOUTPUT = "tb_clock_dividers.vcd"
+$TESTBENCH = "tb_$COMPONENT.sv"
+$TBOUTPUT = "tb_$COMPONENT.vcd"
 
 # TOOLS
 # You need to update the paths below to the tools in your system

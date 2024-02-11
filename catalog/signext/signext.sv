@@ -1,33 +1,29 @@
 ///////////////////////////////////////////////////////////////////////////////
 //
-// EXAMPLE module
+// Sign Extender module
 //
-// An example module for your Computer Architecture Elements Catalog
+// A sign extension module for your Computer Architecture Elements Catalog
 //
-// module: example_module
+// module: signext
 // hdl: Verilog
 //
 // author: Your Name <your.name@cooper.edu>
 //
 ///////////////////////////////////////////////////////////////////////////////
 
-`ifndef EXAMPLE_MODULE
-`define EXAMPLE_MODULE
+`ifndef SIGNEXT
+`define SIGNEXT
 
-module example_module(A, B, C);
+module signext(add your module parameters here);
    //
    // ---------------- PORT DEFINITIONS ----------------
    //
-   input  [3:0] A, B;
-   output [3:0] C;
+   // ADD YOUR MODULE INPUTS AND OUTPUTS HERE
 
    //
    // ---------------- MODULE DESIGN IMPLEMENTATION ----------------
    //
 
-   // mix up the input bits
-   assign C = { A[0], B[2], A[1], B[3] };
-
 endmodule
 
-`endif // EXAMPLE_MODULE
+`endif // SIGNEXT
