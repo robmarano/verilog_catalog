@@ -17,7 +17,7 @@ catch {
 }
 
 # Clean up from last run
-$filesToRemove = @("$COMPONENT", "$COMPONENT.vcd")
+$filesToRemove = @("$COMPONENT", "tb_$COMPONENT.vcd")
 Write-Output "Removing files: $filesToRemove"s
 $filesToRemove | ForEach-Object { Remove-Item -Path $_ -Force -ErrorAction SilentlyContinue -Confirm:$false}
 
