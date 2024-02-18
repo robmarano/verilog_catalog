@@ -43,3 +43,12 @@ make clean
 ```powershell
 .\clean.ps1
 ```
+# Committing Work to GitHub
+From within your Terminal, issue the following commands, on Linux/MacOS/Windows:
+```bash
+git status
+git add *
+git commit -a -m "Write something here that describes what you are committing to the catalog repository"
+git push
+git pull
+```
